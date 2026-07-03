@@ -8,17 +8,17 @@ url_bd = f"sqlite:///{nombre_bd}"
 
 #motor de base de datos 
 
-motor_bd = create_engine (url_bd) 
+motor_base_d = create_engine (url_bd) 
 
 #definir el metodo para crear las tablas
 def crear_tablas (app: FastAPI):
-    SQLModel.metadata.create_all (motor_bd)
+    SQLModel.metadata.create_all (motor_base_d)
     yield #no hay nada pararetornar o ejecutar
 
 
 #definir el metodo para la sesion 
 def obtener_sesion ():
-    with Session (motor_bd) as mi_sesion:
+    with Session (motor_base_d) as mi_sesion:
         yield mi_sesion #retorna la sesion 
 
     

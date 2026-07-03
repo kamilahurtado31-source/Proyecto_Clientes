@@ -10,3 +10,4 @@ app= FastAPI (lifespan= crear_tablas)
 app.include_router(ruta_cliente, tags=["Clientes"])
 app.include_router(ruta_facturas, tags=["Facturas"])
 app.include_router(ruta_transacciones, tags=["Transacciones"])
+
