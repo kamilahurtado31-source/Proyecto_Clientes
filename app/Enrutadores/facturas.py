@@ -92,4 +92,4 @@ async def eliminar_factura(factura_id: int, mi_sesion: Sesion_dependencia):
 
     return factura_bd
 
-    
+    .
