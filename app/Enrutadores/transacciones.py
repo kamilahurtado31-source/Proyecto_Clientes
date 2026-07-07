@@ -87,4 +87,4 @@ async def eliminar_transaccion(transacciones_id: int, mi_sesion: Sesion_dependen
 
     return transaccion_bd
 
-    ..
+    
