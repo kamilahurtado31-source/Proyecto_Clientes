@@ -3,6 +3,7 @@ from ..Modelos.cliente import cliente, clientecrear, clienteeditar
 from ..listas import lista_clientes
 from ..conexion_base_d import Sesion_dependencia
 from sqlmodel import select
+from ..Modelos.factura import Factura
 ruta_cliente = APIRouter () 
 
 
@@ -77,4 +78,3 @@ async def eliminar_cliente(cliente_id: int, mi_sesion: Sesion_dependencia):
     return cliente_bd
     
     
-..
