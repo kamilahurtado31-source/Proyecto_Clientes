@@ -17,7 +17,7 @@ async def listar_facturas (sesion:Sesion_dependencia):
     return lista_facturas
 
 
-@rutas_facturas.get("/facturas/{factura_id}", response_model=Factura)
+@ruta_facturas.get("/facturas/{factura_id}", response_model=Factura)
 async def listar_factura(factura_id: int, mi_sesion: Sesion_dependencia):
     factura_bd = mi_sesion.get(Factura, factura_id)
 

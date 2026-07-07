@@ -55,7 +55,7 @@ async def editar_cliente(cliente_id: int, datos_cliente: clienteeditar, mi_sesio
    
 
 # endpoint eliminar cliente
-@rutas_clientes.delete("/clientes/{cliente_id}", response_model=cliente)
+@ruta_cliente.delete("/clientes/{cliente_id}", response_model=cliente)
 async def eliminar_cliente(cliente_id: int, mi_sesion: Sesion_dependencia):
     cliente_bd = mi_sesion.get(cliente, cliente_id)
     if not cliente_bd:
