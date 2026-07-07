@@ -75,3 +75,4 @@ async def eliminar_cliente(cliente_id: int, mi_sesion: Sesion_dependencia):
     mi_sesion.commit()
 
     return cliente_bd
+    ....
