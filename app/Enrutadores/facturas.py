@@ -91,3 +91,5 @@ async def eliminar_factura(factura_id: int, mi_sesion: Sesion_dependencia):
     mi_sesion.commit()
 
     return factura_bd
+
+    ...
